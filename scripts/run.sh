@@ -79,11 +79,11 @@ open_url() {
   echo "URLを開けるコマンドが見つかりません: $url" >&2
 }
 
-
 open_code() {
-  # VSCode（code）があればリポジトリを開く
+  # VSCode（code）があればワークスペースを開く
   if command -v code >/dev/null 2>&1; then
-    code "$REPO_ROOT"
+    local target="${WORKSPACE:-$HOME}"
+    code "$target"
   fi
 }
 
