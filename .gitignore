@@ -9,3 +9,17 @@ urls.local.txt
 *.swp
 .vscode/
 
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyd
+
+# virtualenv
+venv/
+env/
+
+# mypy
+.mypy_cache/
+
+# pytest
+.cache/
