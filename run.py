@@ -35,7 +35,6 @@ def append_todo_to_daily(today_file: Path | None) -> None:
         print(f"=== TODO追記中 ({TODO_FILE_PATH.name}) ===")
         
         with open(today_file, "a", encoding="utf-8") as f:
-            f.write("\n\n## Unsorted TODO\n")
             f.write(content)
             f.write("\n")
         
